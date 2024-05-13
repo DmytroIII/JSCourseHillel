@@ -9,10 +9,21 @@ console.log(typeof(undefined)); */
 
 
 // Отримання рядків від користувача
-var Input1 = prompt("Введіть перший рядок:");
-var Input2 = prompt("Введіть другий рядок:");
-var Input3 = prompt("Введіть третій рядок:");
+let Input1 = prompt("Введіть перший рядок:");
+let Input2 = prompt("Введіть другий рядок:");
+let Input3 = prompt("Введіть третій рядок:");
 
-// Виведення рядків у довільному порядку
 console.log(`${Input2}\n${Input1}\n${Input3}`);
 
+// 3 ДЗ якщо просто брати обробку числа //
+
+let inputNumb = 10369;
+inputNumb = inputNumb.toString().split("").join(" ");
+console.log(inputNumb);
+
+// Додатково зробив функцією //
+
+function cnangeNumber(inputNumber) {
+    return inputNumber.toString().split("").join(" ");
+};
+console.log(cnangeNumber(12345));
