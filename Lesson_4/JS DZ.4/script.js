@@ -1,21 +1,20 @@
 
+let numOrStr = prompt('input number or string');
+console.log(numOrStr)
 
-/* var userName = prompt("Ім'я користувача");
-alert(`Hello, ${userName}! How are you?`); */
+switch (true) {
+    
+    case (numOrStr === null): 
+    console.log('ви скасували')
+    break; 
 
-/* var userName = prompt("Введіть трьохзначне число");
-alert(`Hello, ${userName}! How are you?`); */
+    case ( numOrStr.trim() === '' ): 
+    console.log('Empty String')
+    break; 
 
-let theSameNumber = (inputNumber) => {
-    let array = inputNumber.toString().split("");
+    case ( isNaN( +numOrStr ) ):
+    console.log('number is Ba_NaN')
+    break; 
 
-    if (array[0] === array[1] && array[1] === array[2]) {
-       console.log("Числа однакові")
-    } else {
-        console.log("Числа НЕ однакові")
-    }
-
+    default: console.log('OK!');
 }
-
-theSameNumber(345);
-theSameNumber(333);
