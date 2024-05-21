@@ -1,13 +1,12 @@
-/*
-console.log(typeof("Hello"));
+
+console.log(typeof"Hello");
 console.log(typeof(123));
 console.log(typeof(true));
 console.log(typeof([1]));
 console.log(typeof(function(){}));
 console.log(typeof(null));
-console.log(typeof(undefined)); */
 
-
+/*
 // Отримання рядків від користувача
 let Input1 = prompt("Введіть перший рядок:");
 let Input2 = prompt("Введіть другий рядок:");
@@ -26,4 +25,4 @@ console.log(inputNumb);
 function cnangeNumber(inputNumber) {
     return inputNumber.toString().split("").join(" ");
 };
-console.log(cnangeNumber(12345));
+console.log(cnangeNumber(12345)); */
