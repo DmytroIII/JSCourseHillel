@@ -1,20 +1,17 @@
 
-let numOrStr = prompt('input number or string');
-console.log(numOrStr)
+const number = prompt("Введіть ціле число N")
 
-switch (true) {
-    
-    case (numOrStr === null): 
-    console.log('ви скасували')
-    break; 
+let numberCount= 0;
 
-    case ( numOrStr.trim() === '' ): 
-    console.log('Empty String')
-    break; 
-
-    case ( isNaN( +numOrStr ) ):
-    console.log('number is Ba_NaN')
-    break; 
-
-    default: console.log('OK!');
+for (let i=1; i<=number; i+=1) {
+  if(count % i === 0) {
+    numberCount +=1;
+  }
 }
+
+if (numberCount === 2) {
+  alert("Це просте число")
+} else {
+  alert("Це не просте число")
+}
+
