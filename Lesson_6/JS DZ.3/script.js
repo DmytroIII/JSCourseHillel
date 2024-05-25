@@ -1,9 +1,9 @@
 
-
-const count = prompt("Введіть ціле число N")
-
-for (let i=1; i<=100; i+=1) {
-  if(i**2 < count) {
-    console.log(i)
-  }
-}
+function removeElement(array, item) {
+     for (let i=0; i<array.length; i++){
+      if (array[i] === item) {
+        array.splice(i,1)
+      }
+     }
+     return array;
+}  
