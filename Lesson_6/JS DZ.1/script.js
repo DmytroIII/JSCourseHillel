@@ -1,5 +1,13 @@
 
+function delSymbol(text,letters) {
+   let textArray = text.split("");
+   let result = [];
+   for (let e of textArray) {
+      if(!letters.includes(e)) {
+         result.push(e);
+      }
+   }
+   return result.join('');
 
-for (let i=20; i<=30; i+=0.5){
-   console.log(i);
 }
+   
