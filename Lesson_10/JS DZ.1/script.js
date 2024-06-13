@@ -1,6 +1,3 @@
-
-
-
 const user =  {
     "id": 2,
     "name": "Ervin Howell",
@@ -30,7 +27,6 @@ displayUserInfo() {
         console.log(`${key}: ${info[key]}`);
       }
   }
-
 }
 
 user.displayUserInfo();
