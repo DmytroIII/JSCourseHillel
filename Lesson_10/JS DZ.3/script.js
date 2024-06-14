@@ -1,22 +1,40 @@
-function promptForNumber() {
-  let iteration = 0;
-  let userInput;
 
-  while (iteration < 10) {
-      userInput = prompt("Введіть число більше 100:");
-      
-      if (userInput > 100) {
-          console.logs(`Ви ввели число більше 100: ${userInput}`);
-          return;
-      }
 
-      iteration++;
+const adressBook = {
 
-      if (iteration === 10) {
-          console.log(`Ви досягли максимальну кількість спроб. Останнє введене число: ${userInput}`);
-          return;
-      }
-  }
+contacts: [ 
+{
+    "name": "John",
+    "phone": "+380667777777",
+    "email": "John@gmail.com"
+},
+{
+    "name": "Vince",
+    "phone": "+38066888888",
+    "email": "Vince@gmail.com"
+},
+{
+    "name": "Mike",
+    "phone": "+380669999999",
+    "email": "Mike@gmail.com"
+} 
+
+]
+,
+  addNewUser(name, phone, email){
+    const newUser = {
+    name: name,
+    phone: phone,
+    email: email
+    };
+    this.contacts.push(newUser);
+    return this.contacts;
 }
+,
+  findUser(name) {
+   return this.contacts.filter(item => item.name === name);
+  }
 
-promptForNumber();
+}
+adressBook.addNewUser("Dmytro","0661111111","dmytro@gmail.com")
+adressBook.findUser("Vince")
